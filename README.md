@@ -9,3 +9,12 @@ Utilice los metodos getProduct(), getProductById() y addProduct() para darle fun
 
 Trabajo realizado en rama sprint-1
 
+2da entrega del desafio "Manejo de archivos"
+Nombre del archivo: script.js
+
+En esta instancia modifique la class ProductManager agragandole this.path y this.init
+Utilicé FilySystem(fs) para crear, leer, actualizar y modificar archivos para ello lo invoqué con la variable const fs= requiere("fs")
+Incluí los metodos addProduct(), getProducts(), getProductById(), updateProduct(id,data) y deleteProduct(id) utilizandolos de forma asincrona para poder convertir datos js a json y viceversa.
+
+
+
