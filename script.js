@@ -49,7 +49,7 @@ class ProductManager{
         }
     }
     getProducts() {
-       return this.carts
+       return this.products
     }
     getProductById(id) {
         try{
@@ -101,7 +101,7 @@ class ProductManager{
     }
     
 }
-let manager = new ProductManager('data/products.json')
+let manager = new ProductManager('./data/products.json')
 async function manage() {
     
     await manager.addProduct({ title:'Remera',description:'Talle L',price:5000,thumbnail:"img1",stock:10 });

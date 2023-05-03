@@ -1,6 +1,6 @@
 import express, {response} from "express"
-import cart from "/carts.js"
-import manager from "/script.js"
+import cart from "./carts.js"
+import manager from "./script.js"
 
 let server = express()
 
@@ -27,24 +27,24 @@ let products_function=(req,res)=>{
         let products = manager.getProducts().slice(0,limit)
     if(products.length>0){
         return res.send({
-            succes: true,
+            success: true,
             products: products
         })
     }else{
     return res.send({
-        succes: false,
+        success: false,
         products: "not found"
     })}
     }else{
         let products = manager.getProducts()
         if(products.length>0){
             return res.send({
-                succes: true,
+                success: true,
                 products: products
             })
         }else{
         return res.send({
-            succes: false,
+            success: false,
             products: "not found"
         })}  
     }
@@ -60,13 +60,13 @@ let id_function=(req,res)=>{
     console.log(one)
     if(one){
         return res.send({
-            succes: true,
-            user : one
+            success: true,
+            response : {one}
         })
     }else{
         return res.send({
-            succes: false,
-            user : "not found"
+            success: false,
+            response : "not found"
         })
     }
 }
@@ -77,7 +77,7 @@ let cart_function=(req,res)=>{
     let carrito= cart.getCarts()
     console.log(carrito)
     return res.send({
-        succes:true,
+        success:true,
         response:carrito
 
     })
@@ -93,12 +93,12 @@ let cid_function=(req,res)=>{
     console.log(one)
     if(one){
         return res.send({
-            succes: true,
-            user : one
+            success: true,
+            response : {one}
         })
     }else{
         return res.send({
-            succes: false,
+            success: false,
             user : "not found"
         })
     }
