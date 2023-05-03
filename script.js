@@ -1,4 +1,5 @@
-const fs = require('fs')
+
+import fs from "fs"
 
 class ProductManager{
     constructor(path){
@@ -47,18 +48,10 @@ class ProductManager{
             return 'addProduct: error'
         }
     }
-    async getProducts() {
-        try{
-           if(this.products.length){
-            return this.products
-           }else{
-            return 'Not found'
-           }     
-        }catch(error){
-            return 'getProducts:error'
-        }  
+    getProducts() {
+       return this.carts
     }
-    async getProductById(id) {
+    getProductById(id) {
         try{
         let search = this.products.find(each=>each.id===id)
         if(search){
@@ -108,8 +101,9 @@ class ProductManager{
     }
     
 }
-async function manager() {
-    let manager = new ProductManager('./products.json')
+let manager = new ProductManager('data/products.json')
+async function manage() {
+    
     await manager.addProduct({ title:'Remera',description:'Talle L',price:5000,thumbnail:"img1",stock:10 });
     await manager.addProduct({ title:'Buzo Hoodie',description:'Talle M',price:8000,thumbnail:"img2",stock:20 });
     await manager.addProduct({ title:'Pantalon cargo',description:'Talle XL',price:6400,thumbnail:"img3",stock:5 });
@@ -129,4 +123,5 @@ async function manager() {
 
    
 }
-manager()
+// manage()
+export default manager
