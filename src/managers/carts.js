@@ -62,7 +62,7 @@ class CartManager{
     }
 
 }
-let cart =new CartManager('data/carts.json')
+let cart =new CartManager('./src/data/carts.json')
 async function carrito(){
     await cart.addCart({pid:5,quantity:5})
     //await cart.getCarts()

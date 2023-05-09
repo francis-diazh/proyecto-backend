@@ -38,7 +38,7 @@ class ProductManager{
             let data_json = JSON.stringify(this.products,null,2)
             await fs.promises.writeFile(this.path,data_json)
             console.log('id´s created product: '+data.id)
-            return 'id´s product: '+data.id
+            return data
         }else{
             console.log('Incompleto')
             return 'Incompleto'
@@ -101,7 +101,7 @@ class ProductManager{
     }
     
 }
-let manager = new ProductManager('./data/products.json')
+let manager = new ProductManager('./src/data/products.json')
 async function manage() {
     
     await manager.addProduct({ title:'Remera',description:'Talle L',price:5000,thumbnail:"img1",stock:10 });

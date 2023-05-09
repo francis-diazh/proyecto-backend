@@ -1,0 +1,170 @@
+[
+  {
+    "title": "Remera",
+    "description": "Talle L",
+    "price": 5000,
+    "thumbnail": "img1",
+    "stock": 10,
+    "id": 1
+  },
+  {
+    "title": "Buzo Hoodie",
+    "description": "Talle M",
+    "price": 8000,
+    "thumbnail": "img2",
+    "stock": 20,
+    "id": 2
+  },
+  {
+    "title": "Pantalon cargo",
+    "description": "Talle XL",
+    "price": 6400,
+    "thumbnail": "img3",
+    "stock": 5,
+    "id": 3
+  },
+  {
+    "title": "Piluso",
+    "description": "Unisex",
+    "price": 1000,
+    "thumbnail": "img4",
+    "stock": 10,
+    "id": 4
+  },
+  {
+    "title": "Medias 3/4",
+    "description": "Unico",
+    "price": 900,
+    "thumbnail": "img5",
+    "stock": 80,
+    "id": 5
+  },
+  {
+    "title": "Rompeviento",
+    "description": "Talle S",
+    "price": 2500,
+    "thumbnail": "img6",
+    "stock": 80,
+    "id": 6
+  },
+  {
+    "title": "Short",
+    "description": "Algodon",
+    "price": 1800,
+    "thumbnail": "img7",
+    "stock": 10,
+    "id": 7
+  },
+  {
+    "title": "Bermuda",
+    "description": "Con bolsillos",
+    "price": 2000,
+    "thumbnail": "img8",
+    "stock": 10,
+    "id": 8
+  },
+  {
+    "title": "Remera oversize",
+    "description": "Color negro",
+    "price": 4000,
+    "thumbnail": "img9",
+    "stock": 50,
+    "id": 9
+  },
+  {
+    "title": "Remera Over",
+    "description": "Colores varios",
+    "price": 700,
+    "thumbnail": "img10",
+    "stock": 10,
+    "id": 10
+  },
+  {
+    "title": "Remera",
+    "description": "Talle L",
+    "price": 5000,
+    "thumbnail": "img1",
+    "stock": 10,
+    "id": 11
+  },
+  {
+    "title": "Remera",
+    "description": "Talle L",
+    "price": 5000,
+    "thumbnail": "img1",
+    "stock": 10,
+    "id": 12
+  },
+  {
+    "title": "Remera",
+    "description": "Talle L",
+    "price": 5000,
+    "thumbnail": "img1",
+    "stock": [],
+    "id": 13
+  },
+  {
+    "title": "Reme",
+    "description": "Talle L",
+    "price": 5000,
+    "thumbnail": "img1",
+    "stock": [],
+    "id": 14
+  },
+  {
+    "title": "Remera",
+    "description": "Talle L",
+    "price": 5000,
+    "thumbnail": "img1",
+    "stock": [],
+    "id": 15
+  },
+  {
+    "title": "Remera",
+    "description": "Talle L",
+    "price": 5000,
+    "thumbnail": "img1",
+    "stock": [],
+    "id": 16
+  },
+  {
+    "title": "Remera",
+    "description": "Talle L",
+    "price": 5000,
+    "thumbnail": "img1",
+    "stock": [],
+    "id": 17
+  },
+  {
+    "title": "Remera",
+    "description": "Talle L",
+    "price": 5000,
+    "thumbnail": "img1",
+    "stock": [],
+    "id": 18
+  },
+  {
+    "title": "Remera",
+    "description": "Talle L",
+    "price": 5000,
+    "thumbnail": "img1",
+    "stock": [],
+    "id": 19
+  },
+  {
+    "title": "Remera",
+    "description": "Talle L",
+    "price": 5000,
+    "thumbnail": "img1",
+    "stock": [],
+    "id": 20
+  },
+  {
+    "title": "Remera",
+    "description": "Talle L",
+    "price": 5000,
+    "thumbnail": "img1",
+    "stock": [],
+    "id": 21
+  }
+]
