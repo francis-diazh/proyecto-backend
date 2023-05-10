@@ -17,12 +17,4 @@ Utilicé FilySystem(fs) para crear, leer, actualizar y modificar archivos para e
 Incluí los metodos addProduct(), getProducts(), getProductById(), updateProduct(id,data) y deleteProduct(id) utilizandolos de forma asincrona para poder convertir datos js a json y viceversa.
 
 
-3era entrega del desafio:
-Trabajo realizado en rama sprint-3
-
-En esta instancia instalamos express y nodemon para trabajar con servidores. 
-Se crea el archivo server.js para levantar dicho servidor y obtener los datos de ./data/carts.json y ./data/products.json. 
-Utilicé metodos y clases utilizando el import desde script.js y carts.js
-
-
 
