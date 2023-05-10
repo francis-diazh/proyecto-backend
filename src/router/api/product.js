@@ -5,7 +5,7 @@ const router = Router()
 
 router.post('/', async(req,res,next)=> {
     try {
-        let response = await prod_manager.add_product(req.body)
+        let response = await manager.addProduct(req.body)
         if (response===201) {
             return res.json({ status:201,message:'product created'})
         }

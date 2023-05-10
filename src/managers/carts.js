@@ -46,13 +46,8 @@ class CartManager{
         }
     }
     getCartsById(id) {
-        let search = this.carts.find(each=>each.id===id)
-        if(search){
-            console.log(search)
-            return search
-        }else{
-            return "Not found"
-        }
+       return this.carts.find(each=>each.id===id)
+
         
     }
     async update_cart(id,data) {
@@ -73,9 +68,9 @@ class CartManager{
     }
      async update_cart(cid, pid, x) {
             try {
-            let auxCart = getCartsById(cid);
+            let auxCart = this.getCartsById(cid);
             let auxProducts = manager.getProducts();
-            let auxProduct = manager.getProductsById(pid);
+            let auxProduct = manager.getProductById(pid);
             if (auxProduct.stock > x) {
                 
                 auxCart.products.push({

@@ -1,6 +1,6 @@
 [
   {
-    "title": "Remera",
+    "title": "Ojotas",
     "description": "Talle L",
     "price": 5000,
     "thumbnail": "img1",
@@ -22,14 +22,6 @@
     "thumbnail": "img3",
     "stock": 5,
     "id": 3
-  },
-  {
-    "title": "Piluso",
-    "description": "Unisex",
-    "price": 1000,
-    "thumbnail": "img4",
-    "stock": 10,
-    "id": 4
   },
   {
     "title": "Medias 3/4",
@@ -80,91 +72,10 @@
     "id": 10
   },
   {
-    "title": "Remera",
+    "title": "RemeraNewPost",
     "description": "Talle L",
     "price": 5000,
     "thumbnail": "img1",
-    "stock": 10,
     "id": 11
-  },
-  {
-    "title": "Remera",
-    "description": "Talle L",
-    "price": 5000,
-    "thumbnail": "img1",
-    "stock": 10,
-    "id": 12
-  },
-  {
-    "title": "Remera",
-    "description": "Talle L",
-    "price": 5000,
-    "thumbnail": "img1",
-    "stock": [],
-    "id": 13
-  },
-  {
-    "title": "Reme",
-    "description": "Talle L",
-    "price": 5000,
-    "thumbnail": "img1",
-    "stock": [],
-    "id": 14
-  },
-  {
-    "title": "Remera",
-    "description": "Talle L",
-    "price": 5000,
-    "thumbnail": "img1",
-    "stock": [],
-    "id": 15
-  },
-  {
-    "title": "Remera",
-    "description": "Talle L",
-    "price": 5000,
-    "thumbnail": "img1",
-    "stock": [],
-    "id": 16
-  },
-  {
-    "title": "Remera",
-    "description": "Talle L",
-    "price": 5000,
-    "thumbnail": "img1",
-    "stock": [],
-    "id": 17
-  },
-  {
-    "title": "Remera",
-    "description": "Talle L",
-    "price": 5000,
-    "thumbnail": "img1",
-    "stock": [],
-    "id": 18
-  },
-  {
-    "title": "Remera",
-    "description": "Talle L",
-    "price": 5000,
-    "thumbnail": "img1",
-    "stock": [],
-    "id": 19
-  },
-  {
-    "title": "Remera",
-    "description": "Talle L",
-    "price": 5000,
-    "thumbnail": "img1",
-    "stock": [],
-    "id": 20
-  },
-  {
-    "title": "Remera",
-    "description": "Talle L",
-    "price": 5000,
-    "thumbnail": "img1",
-    "stock": [],
-    "id": 21
   }
 ]

@@ -38,7 +38,7 @@ class ProductManager{
             let data_json = JSON.stringify(this.products,null,2)
             await fs.promises.writeFile(this.path,data_json)
             console.log('id´s created product: '+data.id)
-            return data
+            return 201
         }else{
             console.log('Incompleto')
             return 'Incompleto'
@@ -65,7 +65,7 @@ class ProductManager{
     }
     async updateProduct(id,data) {
         try {
-            let one = await this.read_product(id)
+            let one = await this.getProductById(id)
             for (let prop in data) {
                 one[prop] = data[prop]
             }
