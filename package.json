@@ -1,0 +1,25 @@
+{
+  "name": "proyecto-backend",
+  "version": "1.0.0",
+  "description": "1er entrega del desafio",
+  "main": "script.js",
+  "type": "module",
+  "scripts": {
+    "start": "node ./src/server.js",
+    "dev": "nodemon ./src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/francis-diazh/proyecto-backend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/francis-diazh/proyecto-backend/issues"
+  },
+  "homepage": "https://github.com/francis-diazh/proyecto-backend#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^2.0.22"
+  }
+}
