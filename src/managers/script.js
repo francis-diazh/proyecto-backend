@@ -65,38 +65,35 @@ class ProductManager{
     }
     async updateProduct(id,data) {
         try {
-            let search = await this.getProductById(id)
-             if(search==="Not found"){
-                console.log("Not found")
-             }else{
-                for (let prop in data) {
-                    search[prop] = data[prop]
-                }
-                 let data_json = JSON.stringify(this.products,null,2)
-                 await fs.promises.writeFile(this.path,data_json)
-                console.log('updateProduct: done , '+id)
-                 return 'updated product: '+id
-             }} 
-             catch(error) {
-                console.log(error)
-                return 'updateProduct: error'
+            let one = await this.read_product(id)
+            for (let prop in data) {
+                one[prop] = data[prop]
             }
-         }
+            let data_json = JSON.stringify(this.products,null,2)
+            await fs.promises.writeFile(this.path,data_json)
+            console.log('updated product: '+id)
+            return 200
+        } catch(error) {
+            console.log(error)
+            return null
+        }
+    }
     async deleteProduct(id) {
         try {
-            let search =await this.getProductById(id)
-            if(search==="Not found"){
-                return "Not found"
-             }else{
-            this.products = this.products.filter(each=>each.id!==id)
-            console.log(this.products)
-            let data_json = JSON.stringify(this.products,null,2)
-           await fs.promises.writeFile(this.path,data_json)
-            console.log('deleteProduct: '+id)
-            return 'deleteProduct: '+id
-        } }catch(error) {
+            let one = this.products.find(each=>each.id===id)
+            if (one) {
+                this.products = this.products.filter(each=>each.id!==id)
+                let data_json = JSON.stringify(this.products,null,2)
+                await fs.promises.writeFile(this.path,data_json)
+                console.log('delete product: '+id)
+                return 200
+            }else{
+                console.log('not found')
+                return null
+            }
+        } catch(error) {
             console.log(error)
-            return 'error: deleting product'
+            return null
         }
     }
     
@@ -117,7 +114,7 @@ async function manage() {
 
     // await manager.getProducts()
     // await manager.getProductById(1)
-    await manager.updateProduct(10,{ title:'Remera Over' })
+    // await manager.updateProduct(10,{ title:'Remera Over' })
     // // await manager.deleteProduct(10)
     // // await manager.getProducts()
 
