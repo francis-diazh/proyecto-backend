@@ -1,0 +1,20 @@
+<div>ESTA ES MI PAG DE INICIO</div>
+<h1>Hola {{name}}</h1>
+
+{{#if last_name}}
+<h2>{{last_name}}</h2>
+{{else}}
+<h2>Aca deberia haber un apellido,si existe</h2>
+{{/if}}
+
+{{#each producto}}
+<div class="card" style="width: 18rem;">
+  <img src={{this.photo}} class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{this.name}}</h5>
+    <p class="card-text">Producto</p>
+    <a href="#" class="btn btn-primary">+Info</a>
+  </div>
+</div>      
+{{/each}}
+{{!-- this para imprimir con each de arreglos --}}
