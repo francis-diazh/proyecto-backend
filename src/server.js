@@ -1,23 +1,38 @@
-import express from "express"
-import router from "./router/index_router.js"
-import errorHandler from "./middlewares/errorHandler.js"
-import not_found_handler from "./middlewares/notFoundHandler.js"
-import { engine } from "express-handlebars"
-import { __dirname } from "./utils.js"
-
-let server = express()
+import server from "./app.js"
+import { Server } from "socket.io"
 
 let PORT = 8080
 let ready= ()=>console.log("server ready on port: "+PORT)
 
-server.engine("handlebars",engine())
-server.set("view engine","handlebars")
-server.set("views",__dirname+"/views")
-server.use(express.static("public"))
-server.use(express.json())
-server.use(express.urlencoded({extended:true}))
-server.use("/",router)
-server.use(errorHandler)
-server.use(not_found_handler)
+let http_server = server.listen(PORT,ready)
+let socket_server = new Server (http_server)
 
-server.listen(PORT,ready)
+let contador = 0;
+const chats = [];
+socket_server.on(
+    "connection",
+    socket => {
+        console.log(`client ${socket.client.id} connected`)
+        socket.on(
+            'primer_conexion',
+            data=>{
+                console.log(data.name)
+                contador++
+                socket_server.emit(
+                    'contador',
+                    {contador}
+                )
+            }
+        )
+        socket.on("auth", () => {
+            //socket solo para cada cliente
+            socket_server.emit("allMessagess", chats);
+          });
+          socket.on("new_message", (data) => {
+            chats.push(data);
+            console.log(chats);
+            socket_server.emit("allMessagess", chats);
+          });
+    }
+)
+    

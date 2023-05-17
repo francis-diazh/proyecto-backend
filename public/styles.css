@@ -1,0 +1,10 @@
+img{
+    object-fit: contain;
+    
+}
+.classBody{
+  background-image: radial-gradient(white, lightblue);  
+}
+.classNav{
+    background-image: linear-gradient(lightblue, black);
+}
