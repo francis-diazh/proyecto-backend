@@ -6,7 +6,7 @@ mensajes_router.get("/chat", async (req, res, next) => {
   try {
     return res.render("chat", {
       title: "Chat.com",
-      script: "/public/chatbox.js",
+      script: "/public/chat.js",
     });
   } catch (error) {
     next(error);
